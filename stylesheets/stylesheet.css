@@ -97,7 +97,14 @@ h6 {
 }
 
 p {
-  margin: 10px 0 15px 0;
+  margin: 10px 0;
+}
+
+footer {
+	text-align: right;
+}
+.copyright {
+	float: left;
 }
 
 footer p {
@@ -151,23 +158,33 @@ img {
   -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
-pre, code {
+pre, code, #demo {
   width: 100%;
   color: #222;
   background-color: #fff;
 
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
 
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-
-
-
 }
 
-pre {
+pre, code, tt {
+	font-family: Monaco, Consolas, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+#demo {
+	text-align: center;
+}
+#demo label {
+	margin: 0 20px;
+}
+#demo label>input {
+	vertical-align: text-bottom;
+}
+
+pre, #demo {
   width: 100%;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -299,14 +316,18 @@ Full-Width Styles
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
+  margin-top: -40px;
+  width: 75%;
 }
 
 #project_tagline {
-  color: #fff;
+  color: #bbb;
   font-size: 24px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+  margin-top: -10px;
+  margin-bottom: -20px;
 }
 
 #downloads {
@@ -316,7 +337,7 @@ Full-Width Styles
   bottom: -40px;
   right: 0;
   height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
+  /*background: url('../images/icon_download.png') no-repeat 0% 90%;*/
 }
 
 .zip_download_link {
@@ -360,6 +381,10 @@ Full-Width Styles
 
 #footer_wrap {
   background: #212121;
+}
+
+#demo {
+
 }
 
 

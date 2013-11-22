@@ -1,79 +1,145 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Newton's Cradle : Loading spinner is sexy again" />
-
+    <meta name="description" content="Newton's Cradle : Loading spinner is sexy again"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Newton's Cradle</title>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="//raw.github.com/zetorama/cradle/master/cradle.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/cradle.css">
+    <title>
+      Newton's Cradle &mdash; CSS3 loading spinner
+    </title>
   </head>
-
   <body>
-
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/zetorama/cradle">View on GitHub</a>
-
-          <h1 id="project_title">Newton's Cradle</h1>
-          <h2 id="project_tagline">Loading spinner is sexy again</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/zetorama/cradle/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/zetorama/cradle/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+      <header class="inner">
+        <a id="forkme_banner" href="https://github.com/zetorama/cradle">View on GitHub</a>
+        <h1 id="project_title">
+          Newton's Cradle
+        </h1>
+        <h2 id="project_tagline">
+          Loading spinner is sexy again
+        </h2>
+        <section id="downloads">
+          <a class="zip_download_link" href="https://github.com/zetorama/cradle/zipball/master">Download this project as a .zip file</a>
+          <a class="tar_download_link" href="https://github.com/zetorama/cradle/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+      </header>
     </div>
-
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+          <a name="whats-that" class="anchor" href="#whats-that"><span class="octicon octicon-link"></span></a>
+          What's that
+        </h3>
+        <p>
+          This is just a loading animation, which made on CSS3 and looks like balls&hellip;
+          Actually, here is it:
+        </p>
+        <div id="demo">
+          <p>
+            <label><input type="checkbox" value="nostrings"> <tt>nostrings</tt></label>
+            <label><input type="checkbox" value="attached"> <tt>attached</tt></label>
+          </p>
+          <div class="cradle">
+            <div><b></b></div>
+            <div><b></b></div>
+            <div><b></b></div>
+            <div><b></b></div>
+            <div><b></b></div>
+          </div>
+        </div>
+        <h3>
+          <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>
+          How to Use
+        </h3>
+        <ol>
+          <li>
+            <p>
+              Include styles in any preferable way
+            </p>
+<pre><code>&lt;link rel="stylesheet" type="text/css" media="screen" href="cradle.min.css"&gt;
 </code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+          </li>
+          <li>
+            <p>
+              Add HTML somewhere
+            </p>
+<pre><code>&lt;div class="cradle"&gt;
+  &lt;div&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </li>
+          <li>
+            <p>
+              <strong>Profit!</strong>
+            </p>
+          </li>
+        </ol>
+        <h3>
+          <a name="wanna-extra-options" class="anchor" href="#wanna-extra-options"><span class="octicon octicon-link"></span></a>
+          Wanna Extra Options?
+        </h3>
+        <p>
+          Just add additional class or all of them. There are only two, though:
+        </p>
+        <dl>
+          <dt>
+            <tt>nostrings</tt>
+          </dt>
+          <dd>
+            Hides strings, making spinner more compact
+          </dd>
+          <dt>
+            <tt>attached</tt>
+          </dt>
+          <dd>
+            Makes spinner more classic, moving 4+1 balls instead of 3+1+1
+          </dd>
+        </dl>
       </section>
     </div>
-
-    <!-- FOOTER  -->
+    <!-- FOOTER -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Newton's Cradle maintained by <a href="https://github.com/zetorama">zetorama</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p class="copyright">
+          Newton's Cradle maintained by
+          <a href="https://github.com/zetorama">zetorama</a>
+        </p>
+        <p>
+          Published with
+          <a href="http://pages.github.com">GitHub Pages</a>
+        </p>
       </footer>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+    </script>
+    <script>
+      if (!window.jQuery) {
+        document.write('<script src="javascripts/jquery-2.0.3.min.js"><\/script>');
+      }
+    </script>
+    <script>
+      window.jQuery(function($) {
+        var $demo = $('#demo');
 
-    
+        $demo.on('change', ':checkbox', function(ev) {
+          var mode = $(ev.currentTarget).val();
+          var substitution = $demo.find('.cradle').clone().toggleClass(mode);
 
+          substitution.end().replaceWith(substitution);
+
+        });
+      })
+    </script>
   </body>
+
 </html>
