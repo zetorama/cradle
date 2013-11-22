@@ -66,14 +66,16 @@
 
 /* extensions */
 
-.cradle.paused *, .cradle.paused b:after  {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
+.cradle.paused *,
+.cradle.paused b:after  {
+  -webkit-animation-play-state: paused !important;
+  animation-play-state: paused !important;
 }
 
-.cradle.disabled *, .cradle.disabled b:after  {
-  -webkit-animation: none;
-  animation: none;
+.cradle.disabled *,
+.cradle.disabled b:after  {
+  -webkit-animation: none !important;
+  animation: none !important;
 }
 
 .cradle.nostrings {

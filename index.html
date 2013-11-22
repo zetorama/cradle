@@ -133,9 +133,11 @@
 
         $demo.on('change', ':checkbox', function(ev) {
           var mode = $(ev.currentTarget).val();
-          var substitution = $demo.find('.cradle').clone().toggleClass(mode);
 
-          substitution.end().replaceWith(substitution);
+          var $cradle = $demo.find('.cradle')
+            .clone().toggleClass(mode);
+
+          $cradle.end().replaceWith($cradle);
 
         });
       })
