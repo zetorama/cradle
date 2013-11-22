@@ -1,5 +1,5 @@
 /*
- * Newton's Cradle
+ * Newton's Cradle v0.1
  * Loading spinner is sexy again.
  *
  * Use Zen HTML:  div.cradle>div*5>b
@@ -9,6 +9,7 @@
  *   .attached  - makes spinner more classic, moving 4+1 balls instead of 3+1+1
  *
  * Send best wishes to Pavel Zet
+ * http://zetorama.github.io/cradle/
  */
 
 .cradle {
@@ -65,6 +66,18 @@
 }
 
 /* extensions */
+
+.cradle.paused *,
+.cradle.paused b:after  {
+  -webkit-animation-play-state: paused !important;
+  animation-play-state: paused !important;
+}
+
+.cradle.disabled *,
+.cradle.disabled b:after  {
+  -webkit-animation: none !important;
+  animation: none !important;
+}
 
 .cradle.nostrings {
   height: 50px;
